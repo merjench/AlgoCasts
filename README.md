@@ -7,11 +7,12 @@ Companion repo to a course on Udemy.com
 
 To keep it in running mode:
 Type directly in exercise file:
-      jest filename/test.js --watch
+      #jest filename/test.js --watch
 or like below
-      jest reversestring/test.js --watch
+      #jest reversestring/test.js --watch
 
 
 To hit debugger:
 cd into the actual exercise file and type:
-     node inspect index.js  
+     # node inspect index.js  
+  then ... type "c"
