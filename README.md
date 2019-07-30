@@ -13,6 +13,8 @@ or like below
 
 
 To hit debugger:
+
+call the function manyally
 cd into the actual exercise file and type:
      # node inspect index.js  
   then ... type "c"
