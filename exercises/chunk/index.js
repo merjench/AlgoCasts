@@ -13,8 +13,15 @@
 //--------------Solution 2 ----------------///
 
 function chunk(array, size) {
+  const chunked = []
+//use let cause we want index to change over time
+  let index = 0
 
-
+  while (index < array.length) {
+    chunked.push(array.slice(index, index + size));
+    index += size;
+  }
+    return chunked
 }
 
 module.exports = chunk;
