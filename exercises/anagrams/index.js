@@ -12,8 +12,10 @@ function anagrams(stringA, stringB) {
   //build helper functions vs character map
   const aCharMap = buildCharMap(stringA);
   const bCharMap = buildCharMap(stringB);
+// next step. pull out all the keys and count the number of keys each string contains
+// Ex: const obj = { a:1, b:1, c:1 }
+//     object.keys(obj).length; 
 
-  
 
 
 
