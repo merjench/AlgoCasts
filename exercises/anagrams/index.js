@@ -14,11 +14,18 @@ function anagrams(stringA, stringB) {
   const bCharMap = buildCharMap(stringB);
 // next step. pull out all the keys and count the number of keys each string contains
 // Ex: const obj = { a:1, b:1, c:1 }
-//     object.keys(obj).length; 
+//     object.keys(obj).length;
 
-
-
-
+    if (Object.keys(aCharMap).length !== Object.keys(bCharMap).length) {
+      return false;
+    }
+// itterate over it
+    for (let char in aCharMap) {
+      if (aCharMap[char] !== bCharMap[char]) {
+        return false;
+      }
+    }
+      return true;
 }
 
   function buildCharMap(str) {
