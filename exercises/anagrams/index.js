@@ -8,6 +8,15 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {}
+function anagrams(stringA, stringB) {
+
+
+}
 
 module.exports = anagrams;
+
+
+//Example:
+// const word = "HI THERE!!!!"
+//word.replace(/[^\w]/g. "").loLowerCase();
+// => hithere -----------/// removes everythig other than the actual letters
