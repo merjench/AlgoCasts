@@ -7,6 +7,21 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
-function capitalize(str) {}
+
+// string.prototype.slice()
+// it will take some number of elements out of that string. And then there is a optinal second argument
+// Ex:
+// const word = "there"
+//word[0]
+// word.slice(1) => will return
+//                  T
+//                  there
+
+
+function capitalize(str) {
+
+}
+
+
 
 module.exports = capitalize;
