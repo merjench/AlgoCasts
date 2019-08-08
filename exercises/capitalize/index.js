@@ -17,10 +17,19 @@
 //                  T
 //                  there
 
-
+//--------------------Solution 1 ---------------------------//
 function capitalize(str) {
+  //make an empty array 'words'
+
+  //split the input string by spaces to get an array
+
+  //for each word in the array: Uppercase the first letter of the word,
+  //                            join first letter with the rest of the string,
+  //                            push results into 'words' array
+  // join 'words' into a string and return it
 
 }
+
 
 
 
