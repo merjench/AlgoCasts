@@ -8,44 +8,47 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {
-  //build helper functions vs character map
-  const aCharMap = buildCharMap(stringA);
-  const bCharMap = buildCharMap(stringB);
-// next step. pull out all the keys and count the number of keys each string contains
-// Ex: const obj = { a:1, b:1, c:1 }
-//     object.keys(obj).length;
+///______________________Solution 1 ________________________________//
 
-    if (Object.keys(aCharMap).length !== Object.keys(bCharMap).length) {
-      return false;
-    }
-// itterate over it
-    for (let char in aCharMap) {
-      if (aCharMap[char] !== bCharMap[char]) {
-        return false;
-      }
-    }
-      return true;
-}
+// function anagrams(stringA, stringB) {
+//   //build helper functions vs character map
+//   const aCharMap = buildCharMap(stringA);
+//   const bCharMap = buildCharMap(stringB);
+// // next step. pull out all the keys and count the number of keys each string contains
+// // Ex: const obj = { a:1, b:1, c:1 }
+// //     object.keys(obj).length;
+//
+//     if (Object.keys(aCharMap).length !== Object.keys(bCharMap).length) {
+//       return false;
+//     }
+// // itterate over it
+//     for (let char in aCharMap) {
+//       if (aCharMap[char] !== bCharMap[char]) {
+//         return false;
+//       }
+//     }
+//       return true;
+// }
+//
+//   function buildCharMap(str) {
+//     const charMap = {};
+//
+//     for (let char of str.replace(/[^\w]/g, '').toLowerCase()) {
+//       charMap[char] = charMap[char] + 1 || 1;
+//     }
+//
+//     return charMap
+//
+//   }
 
-  function buildCharMap(str) {
-    const charMap = {};
-
-    for (let char of str.replace(/[^\w]/g, '').toLowerCase()) {
-      charMap[char] = charMap[char] + 1 || 1;
-    }
-
-    return charMap
-
-  }
-
+//________________Solution 2___________________________///////////
 
   function anagrams(stringA, stringB) {
 
   }
 
   function cleanString(str) {
-    return str.replace(/[^\w]/g, '').toLowerCase().split('').join(''); 
+    return str.replace(/[^\w]/g, '').toLowerCase().split('').join('');
   }
 
 module.exports = anagrams;
