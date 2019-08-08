@@ -39,6 +39,15 @@ function anagrams(stringA, stringB) {
 
   }
 
+
+  function anagrams(stringA, stringB) {
+
+  }
+
+  function cleanString(str) {
+    return str.replace(/[^\w]/g, '').toLowerCase().split('').join(''); 
+  }
+
 module.exports = anagrams;
 
 
@@ -50,4 +59,4 @@ module.exports = anagrams;
 //Another Example:
 // const numbers = [10, 30, 5, -90, 50]
 // numbers.sort()  => will sort the characters "meaningfully"
-// same can be used to sort with characters and it will sort them alphabetically 
+// same can be used to sort with characters and it will sort them alphabetically
