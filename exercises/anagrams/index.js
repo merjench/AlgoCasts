@@ -46,3 +46,8 @@ module.exports = anagrams;
 // const word = "HI THERE!!!!"
 //word.replace(/[^\w]/g. "").loLowerCase();
 // => hithere -----------/// removes everythig other than the actual letters
+
+//Another Example:
+// const numbers = [10, 30, 5, -90, 50]
+// numbers.sort()  => will sort the characters "meaningfully"
+// same can be used to sort with characters and it will sort them alphabetically 
