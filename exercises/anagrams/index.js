@@ -44,6 +44,7 @@
 //________________Solution 2___________________________///////////
 
   function anagrams(stringA, stringB) {
+    return cleanString(stringA) === cleanString(stringB)
 
   }
 
