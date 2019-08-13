@@ -23,15 +23,14 @@ function capitalize(str) {
   const words = [];
   //split the input string by spaces to get an array
   for (let word of str.split(' ')) {
-    words.push( word[0].toUpperCase() + word.slice(1)
+    words.push(word[0].toUpperCase() + word.slice(1))
     //give me everything from index one to last word
   }
-
+  return words.join(' ');
   //for each word in the array: Uppercase the first letter of the word,
   //                            join first letter with the rest of the string,
   //                            push results into 'words' array
   // join 'words' into a string and return it
-
 }
 
 
