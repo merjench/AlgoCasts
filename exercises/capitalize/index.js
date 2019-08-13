@@ -17,21 +17,36 @@
 //                  T
 //                  there
 
-//--------------------Solution 1 ---------------------------//
+//---------------Solution 2 -------------------------///
+
 function capitalize(str) {
-  //make an empty array 'words'
-  const words = [];
-  //split the input string by spaces to get an array
-  for (let word of str.split(' ')) {
-    words.push(word[0].toUpperCase() + word.slice(1))
-    //give me everything from index one to last word
-  }
-  return words.join(' ');
-  //for each word in the array: Uppercase the first letter of the word,
-  //                            join first letter with the rest of the string,
-  //                            push results into 'words' array
-  // join 'words' into a string and return it
+  //create an empty string called result
+  // for each character in the string
+  //           IF the character to the left a space
+  //                capitalize it and add it to "result"
+  //           else
+  //                add it to 'result'
+
+
 }
+
+
+
+//--------------------Solution 1 ---------------------------//
+// function capitalize(str) {
+//   //make an empty array 'words'
+//   const words = [];
+//   //split the input string by spaces to get an array
+//   for (let word of str.split(' ')) {
+//     words.push(word[0].toUpperCase() + word.slice(1))
+//     //give me everything from index one to last word
+//   }
+//   return words.join(' ');
+//   //for each word in the array: Uppercase the first letter of the word,
+//   //                            join first letter with the rest of the string,
+//   //                            push results into 'words' array
+//   // join 'words' into a string and return it
+// }
 
 
 
