@@ -20,8 +20,12 @@
 //--------------------Solution 1 ---------------------------//
 function capitalize(str) {
   //make an empty array 'words'
-
+  const words = [];
   //split the input string by spaces to get an array
+  for (let word of str.split(' ')) {
+    words.push( word[0].toUpperCase() + word.slice(1)
+    //give me everything from index one to last word
+  }
 
   //for each word in the array: Uppercase the first letter of the word,
   //                            join first letter with the rest of the string,
