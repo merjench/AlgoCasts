@@ -24,11 +24,21 @@
 // from 0 to n
 // IF the current column is equal to or less than the current row
           // add a "#" to "stair"
-    //else add a space to 'stair'
+    //ELSE add a space to 'stair'
 //console log 'stair'
 function steps(n) {
+  for (let row = 0; row < n; row++) {
+    let stair = "";
 
-
+    for (let column = 0; column <n; column++) {
+      if (column <= row) {
+        stair += "#";
+      } else {
+        stair += " "
+      }
+    }
+    console.log(stair)
+  }
 }
 
 module.exports = steps;
