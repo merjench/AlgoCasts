@@ -7,6 +7,22 @@
 //   vowels('Why do you ask?') --> 4
 //   vowels('Why?') --> 0
 
-function vowels(str) {}
+
+// ----------Itterative Solution 1 -------------///
+
+function vowels(str) {
+    let count = 0;
+    const allVowels = ['a', 'e', 'i', 'o', 'u'];
+    // const allVowels = 'aeiou';
+
+    for (let char of str.toLowerCase()) {
+      //helper method to call all vowels instead of using multiple if statements
+      //.includes method
+      if (allVowels.includes(char)) {
+        count++
+      }
+    }
+    return count
+}
 
 module.exports = vowels;
