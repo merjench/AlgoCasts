@@ -17,6 +17,18 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+//------------Solution 1 ----------------//
+//Solution steps:
+//from 0 to n
+// create an dempty string 'stair'
+// from 0 to n
+// IF the current column is equal to or less than the current row
+          // add a "#" to "stair"
+    //else add a space to 'stair'
+//console log 'stair'
+function steps(n) {
+
+
+}
 
 module.exports = steps;
