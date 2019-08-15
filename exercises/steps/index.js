@@ -35,8 +35,22 @@
 // Check the base case. Is there any work left to do? Of not, return
 // Do some work. Call your function again, making sure the arguments have changed in some fashion
 
-function steps(n) {
+//add another element row and default it to start at 0
+function steps(n, row = 0, stair = '') {
+  if (n === row) {
+    return;
+  }
+  if (n === stair.length) {
+    console.log(stair);
+    return steps(n, row + 1);
+  }
 
+  if (stair.length <= row) {
+    stair += '#';
+  } else {
+    stair += " ";
+  }
+  steps(n, row, stair)
 }
 
 
