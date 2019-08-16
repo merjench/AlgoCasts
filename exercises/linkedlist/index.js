@@ -10,6 +10,14 @@ class Node {
   }
 }
 
-class LinkedList {}
+class LinkedList {
+  constructor() {
+    this.head = null;
+  }
+
+  insertFirst(data) {
+    const node = new Node(data); 
+  }
+}
 
 module.exports = { Node, LinkedList };
