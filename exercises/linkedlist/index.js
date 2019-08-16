@@ -14,9 +14,9 @@ class LinkedList {
   constructor() {
     this.head = null;
   }
-
+// we are creating a new node and passing in the existing note and not overriding the old node.
   insertFirst(data) {
-    const node = new Node(data); 
+    this.head = new Node(data, this.head);
   }
 }
 
