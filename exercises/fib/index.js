@@ -11,3 +11,22 @@
 function fib(n) {}
 
 module.exports = fib;
+
+
+// function fib(n) {
+ //let array = [o, 1];
+//  //for (let i = 2; i<n+1; i ++) {
+//  array.push(arr[i-2] + arr[i - 1])
+// }
+// return arr[n]
+// }
+
+
+//---------Recursive Solution ----------///
+
+// function fib(n) {
+//   if (n < 2){
+//     return n
+//   }
+//   return fib(n - 1) + fib (n - 2)
+// }
