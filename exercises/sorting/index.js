@@ -32,15 +32,30 @@ function selectionSort(arr) {
       arr[i] = lesser;
     }
   }
-  return arr 
+  return arr
 }
 
+// ------------------Recursion use for Solution ----------------///
 function mergeSort(arr) {
 
 }
 
 function merge(left, right) {
-
+  //create results array
+  const results = []
+//while there are still elements in both arrays
+  while (left.length && right.length) {
+    //if the first element the left half is less than firsst in right half
+    if (left[0] < right[0]) {
+      //shift the element from left into a 'results' arr
+      results.push(left.shift());
+    } else {
+      //'shift' the element from right into a 'results' arr
+      results.push(right.shift())
+    }
+  }
+//take everything from the array that still has stuff in it and put it in results
+  return [...results, ...left, ...right];
 }
 
 module.exports = { bubbleSort, selectionSort, mergeSort, merge };
