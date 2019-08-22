@@ -21,6 +21,9 @@ cd into the actual exercise file and type:
 
 #Data Structures:
 
-Ways of organizing information with optimal runtime complexity for adding or removing records 
+Ways of organizing information with optimal runtime complexity for adding or removing records
 
 JS natively implements several data structures. You will be asked about 'inferior' data structure  
+   #Queue
+   - adding a record and it's linier. First in first out (FIFO).
+   - think about standing in line to get a ticket. 
