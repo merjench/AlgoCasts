@@ -18,3 +18,9 @@ call the function manyally
 cd into the actual exercise file and type:
      # node inspect index.js  
   then ... type "c"
+
+#Data Structures:
+
+Ways of organizing information with optimal runtime complexity for adding or removing records 
+
+JS natively implements several data structures. You will be asked about 'inferior' data structure  
