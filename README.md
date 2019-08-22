@@ -26,4 +26,7 @@ Ways of organizing information with optimal runtime complexity for adding or rem
 JS natively implements several data structures. You will be asked about 'inferior' data structure  
    #Queue
    - adding a record and it's linier. First in first out (FIFO).
-   - think about standing in line to get a ticket. 
+   - think about standing in line to get a ticket.
+   #Array Equivalent
+   - array.unshift(); => add to the queue
+   - array.pop(); => remove from queue
