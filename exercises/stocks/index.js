@@ -3,7 +3,7 @@
 // and you want to maximize the profit of that stock by buying it once and selling it once in tht period.
 
 
-// Solution 1:
+// ---------------------------Solution 3---------------------------------------------------------///
 
 var array = [4, 9, 1, 10, 13, 0, 10]
 
@@ -25,7 +25,7 @@ function getMaxProfit(array) {
     for(var i = 1; i < array.length; i++) {
 
         // new current min.
-        if(array[i] < array[currMin]) { 
+        if(array[i] < array[currMin]) {
         	currMin = i;
         }
 
@@ -44,3 +44,26 @@ function getMaxProfit(array) {
 var array1 = [10, 7, 5, 8, 11, 9, 1];
 var array2 = [1];
 console.log(getMaxProfit(arr1));
+
+
+/////////-----------------------------------Solution 1------------------------------////
+
+//Provided this solution
+
+function maxProfit(price) {
+  let maxProfit = 0
+  for (let i = 0; i < price.length; i++){
+    for (let k = 0; k < price.lenght; k++) {
+      let earlierNums = Math.min(i, k)
+      let finalNums = Math.min(i, k)
+
+      let initialPrice = price[earlierNums]
+      let finalPrice = price[finalNums]
+
+      let profite = finalPrice - initialPrice;
+
+      maxProfit = Math.max(maxProfit, profite)
+    }
+  }
+  return maxProfit
+}
