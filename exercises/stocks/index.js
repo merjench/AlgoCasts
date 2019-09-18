@@ -5,4 +5,7 @@
 
 // Solution 1:
 
-array = [4, 9, 1, 10, 13, 0, 10]
+var array = [4, 9, 1, 10, 13, 0, 10]
+
+// you want to find two times, ONE to buy stock and one to sell, so we maximize our profite:
+// like so:  max(sellingPrice - buyingPrice)
