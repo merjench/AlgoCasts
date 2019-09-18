@@ -49,7 +49,12 @@ console.log(getMaxProfit(arr1));
 /////////-----------------------------------Solution 1------------------------------////
 
 //Provided this solution
+// for every pair of times treating the earlier time as buy time and the later time as sell time, and see which one is higher
 
+const prices = [10, 6, 3, 9, 11, 5];
+
+// maxProfit(prices);
+// returns 8 (buying for $3 and selling for $11)
 function maxProfit(price) {
   let maxProfit = 0
   for (let i = 0; i < price.length; i++){
@@ -67,3 +72,5 @@ function maxProfit(price) {
   }
   return maxProfit
 }
+
+//------------------ Better Solution--------------------///
