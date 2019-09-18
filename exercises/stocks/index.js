@@ -74,3 +74,16 @@ function maxProfit(price) {
 }
 
 //------------------ Better Solution--------------------///
+
+function maxProfit(prices) {
+  let maxPrice = prices[0]
+  let maxProfit = prices[1] - prices [0];
+
+  for (let i = 1; i < prices.lenght; i++) {
+    let currentPrice = prices[i];
+    let potentialPrice = currentPrice-minPrice;
+    maxProfit = Math.max(maxProfit, potentialProfit);
+    minPrice = Math.min(minPrice, currentPrice);
+  }
+  return maxProfit; 
+}
